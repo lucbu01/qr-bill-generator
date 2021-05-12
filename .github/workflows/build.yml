@@ -21,6 +21,7 @@ jobs:
       - name: Cache
         uses: actions/cache@v2
         with:
+          key: dependencies
           path: node_modules
       - name: Download node modules
         run: npm install

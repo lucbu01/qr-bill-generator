@@ -4,7 +4,7 @@
 
 ---
 <div align="center">
-  <a href="https://github.com/lucbu01/qr-bill-generator/blob/main/LICENSE">
+  <a href="https://github.com/lucbu01/qr-bill-generator/blob/main/LICENCE">
     <img alt="MIT License" src="https://img.shields.io/badge/licence-MIT-brightgreen">
   </a>
   <a href="https://github.com/lucbu01/qr-bill-generator/issues">
@@ -13,7 +13,7 @@
   <a href="https://github.com/lucbu01/qr-bill-generator/stargazers">
     <img alt="Stars" src="https://img.shields.io/github/stars/lucbu01/qr-bill-generator?color=brightgreen&style=flat-square">
   </a>
-  <a href="https://github.com/lucbu01/qr-bill-generator/actions?query=workflow%3ACI">
+  <a href="https://github.com/lucbu01/qr-bill-generator/actions?query=workflow%3Abuild">
     <img alt="CI" src="https://img.shields.io/github/workflow/status/lucbu01/qr-bill-generator/build?style=flat-square">
   </a>
 </div>

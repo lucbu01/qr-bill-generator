@@ -1,6 +1,38 @@
-# QrBillGenerator
+<div align="center">
+  <img alt="QR-Bill Generator" src="https://raw.githubusercontent.com/lucbu01/qr-bill-generator/master/src/assets/icons/icon-128x128.png">
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+---
+<div align="center">
+  <a href="https://github.com/lucbu01/qr-bill-generator/blob/master/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/npm/l/swissqrbill?color=brightgreen&style=flat-square">
+  </a>
+  <a href="https://www.npmjs.com/package/swissqrbill">
+    <img alt="Version" src="https://img.shields.io/npm/v/swissqrbill?color=brightgreen&style=flat-square">
+  </a>
+  <a href="https://github.com/lucbu01/qr-bill-generator/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues-raw/lucbu01/qr-bill-generator?style=flat-square">
+  </a>
+  <a href="https://github.com/lucbu01/qr-bill-generator/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/lucbu01/qr-bill-generator?color=brightgreen&style=flat-square">
+  </a>
+  <a href="https://github.com/lucbu01/qr-bill-generator/actions?query=workflow%3ACI">
+    <img alt="CI" src="https://img.shields.io/github/workflow/status/lucbu01/qr-bill-generator/build?style=flat-square">
+  </a>
+</div>
+
+---
+
+<br>
+
+# Swiss QR-Bill Generator
+
+With the Swiss QR-Bill Generator you can build serial letters with individual qr bills for each receiver.
+
+
+[Try it out](https://qr.lucbu.ch)
+
+[Pull it on docker](https://hub.docker.com/r/lucbu01/qr-bill-generator)
 
 ## Development server
 
@@ -13,15 +45,3 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,281 @@
+<form (ngSubmit)="readFiles()" class="serial-letter-generator">
+  <div class="form">
+    <mat-accordion>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Rechnungsinformationen</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Logo</mat-label>
+            <ngx-mat-file-input
+              [(ngModel)]="form.logo"
+              name="logo"
+              accept=".png,.jpg"
+            >
+            </ngx-mat-file-input>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Briefkopf</mat-label>
+            <textarea
+              matInput
+              [(ngModel)]="form.letterHead"
+              name="letterHead"
+              rows="7"
+            ></textarea>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>QR Nachricht</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.qrMessageDefinition"
+              name="qrMessageDefinition"
+            />
+          </mat-form-field>
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion class="letter-content">
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Briefinhalt</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Titel</mat-label>
+            <input type="text" matInput [(ngModel)]="form.title" name="title" />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Text vor Rechnung</mat-label>
+            <textarea
+              matInput
+              [(ngModel)]="form.textBeforeInvoice"
+              name="textBeforeInvoice"
+              rows="5"
+            ></textarea>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Text nach Rechnung</mat-label>
+            <textarea
+              matInput
+              [(ngModel)]="form.textAfterInvoice"
+              name="textAfterInvoice"
+              rows="5"
+            ></textarea>
+          </mat-form-field>
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Rechnungssteller</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.creditorName"
+              name="creditorName"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Adresse</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.creditorAddress"
+              name="creditorAddress"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>PLZ</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.creditorZipCode"
+              name="creditorZipCode"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Ort</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.creditorCity"
+              name="creditorCity"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>IBAN</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.creditorIban"
+              name="creditorIban"
+            />
+          </mat-form-field>
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Definition Rechnungsempfänger</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Name Definition</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.debtorNameDefinition"
+              name="debtorNameDefinition"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Adresse Definition</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.debtorAddressDefinition"
+              name="debtorAddressDefinition"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>PLZ Definition</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.debtorZipCodeDefinition"
+              name="debtorZipCodeDefinition"
+            />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Ort Definition</mat-label>
+            <input
+              type="text"
+              matInput
+              [(ngModel)]="form.debtorCityDefinition"
+              name="debtorCityDefinition"
+            />
+          </mat-form-field>
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion multi class="invoices">
+      <mat-expansion-panel
+        *ngFor="let invoice of form.invoices; let i = index"
+        class="invoice"
+        expanded
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>Rechnung {{ i + 1 }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>
+              <mat-form-field appearance="fill">
+                <mat-label>Adressliste</mat-label>
+                <ngx-mat-file-input
+                  [(ngModel)]="invoice.members"
+                  [name]="'invoice-' + i + '-members'"
+                  accept=".xlsx"
+                >
+                </ngx-mat-file-input>
+              </mat-form-field>
+              <button type="button" mat-button (click)="addPosition(invoice)">NEUE POSITION</button>
+              <button type="button" mat-button color="warn" (click)="deleteInvoice(invoice)">RECHNUNG LÖSCHEN</button>
+            </mat-list-item>
+            <ng-container
+              *ngFor="let position of invoice.positions; let ip = index"
+              class="position"
+            >
+              <div matSubheader>Position {{ ip + 1 }}</div>
+              <mat-list-item>
+                <mat-form-field
+                  *ngFor="let header of form.invoiceHeaders"
+                  appearance="fill"
+                  [class.number]="header.type !== 'text'"
+                >
+                  <mat-label>{{ header.name }}</mat-label>
+                  <input
+                    type="text"
+                    matInput
+                    [(ngModel)]="position[header.name]"
+                    [name]="
+                      'invoice-' + i + '-position-' + ip + '-' + header.name
+                    "
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="number">
+                  <mat-label>Rabatt ab zweitem Mitglied</mat-label>
+                  <input
+                    type="text"
+                    matInput
+                    [(ngModel)]="position.discountAtSecondMember"
+                    [name]="
+                      'invoice-' +
+                      i +
+                      '-position-' +
+                      ip +
+                      '-discountAtSecondMember'
+                    "
+                  />
+                </mat-form-field>
+                <button type="button" mat-button color="warn" (click)="deletePosition(invoice, position)">
+                  POSITION LÖSCHEN
+                </button>
+              </mat-list-item>
+            </ng-container>
+          </mat-list>
+        </mat-card-content>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <mat-toolbar color="primary">
+    <button type="submit" mat-button>GENERIEREN</button>
+    <div class="spacer"></div>
+    <button type="button" mat-icon-button matTooltip="Rechnung hinzufügen" (click)="addInvoice()">
+      <mat-icon>playlist_add</mat-icon>
+    </button>
+    <button type="button" mat-icon-button matTooltip="Speichern . . .">
+      <mat-icon>save</mat-icon>
+    </button>
+    <button type="button" mat-icon-button matTooltip="Neu">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button type="button" mat-icon-button matTooltip="Öffnen . . .">
+      <mat-icon>folder_open</mat-icon>
+    </button>
+  </mat-toolbar>
+</form>

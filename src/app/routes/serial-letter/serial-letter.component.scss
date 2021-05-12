@@ -1,0 +1,61 @@
+.serial-letter-generator {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    
+    .form {
+        flex: 1 1 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: auto;
+
+        mat-form-field {
+            width: 300px;
+        }
+
+        mat-accordion {
+            margin: 10px;
+            
+            &.invoices {
+                flex: 0 0 calc(100% - 40px);
+
+                mat-list-item {
+                    height: auto;
+
+                    ::ng-deep .mat-list-item-content {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: baseline;
+                    }
+
+                    mat-form-field {
+                        margin-right: 20px;
+                        flex: 1 1 300px;
+
+                        &.number {
+                            flex: 0 0 150px;
+                        }
+                    }
+                }
+            }
+
+            &.letter-content mat-form-field {
+                width: 600px;
+            }
+        }
+    }
+    
+    .mat-toolbar {
+        display: flex;
+        flex-direction: row;
+
+        .spacer {
+            flex: 1 1 0px;
+        }
+    }
+}

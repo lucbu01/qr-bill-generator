@@ -4,11 +4,8 @@
 
 ---
 <div align="center">
-  <a href="https://github.com/lucbu01/qr-bill-generator/blob/master/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/npm/l/swissqrbill?color=brightgreen&style=flat-square">
-  </a>
-  <a href="https://www.npmjs.com/package/swissqrbill">
-    <img alt="Version" src="https://img.shields.io/npm/v/swissqrbill?color=brightgreen&style=flat-square">
+  <a href="https://github.com/lucbu01/qr-bill-generator/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/badge/licence-MIT-brightgreen">
   </a>
   <a href="https://github.com/lucbu01/qr-bill-generator/issues">
     <img alt="Issues" src="https://img.shields.io/github/issues-raw/lucbu01/qr-bill-generator?style=flat-square">
@@ -22,8 +19,6 @@
 </div>
 
 ---
-
-<br>
 
 # Swiss QR-Bill Generator
 

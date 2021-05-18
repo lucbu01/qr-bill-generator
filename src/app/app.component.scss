@@ -13,5 +13,13 @@
         flex: 1 1 0px;
     }
 
+    .mat-toolbar {
+        display: flex;
+        flex-direction: row;
+
+        .spacer {
+            flex: 1 1 0px;
+        }
+    }
 }
 

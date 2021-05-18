@@ -1,1 +1,26 @@
-<p>about works!</p>
+<div class="about">
+    <mat-card>
+        <mat-card-title>
+            App Informationen
+        </mat-card-title>
+        <mat-card-content>
+            <table>
+                <tr><td>Version: </td><td>{{ version }}</td></tr>
+                <tr><td>Erstellt am: </td><td>{{ created }}</td></tr>
+                <tr><td>Erstellt von: </td><td>Luca Bucher</td></tr>
+            </table>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="mailto:info@lucbu.ch">EMAIL</a>
+            <a mat-button href="https://github.com/lucbu01/qr-bill-generator#readme" target="_blank">GITHUB</a>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="iframe">
+        <mat-card-title>
+            Open-Source Lizenzen
+        </mat-card-title>
+        <mat-card-content>
+            <iframe src="/3rdpartylicenses.txt" frameborder="0"></iframe>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    height: calc(100% - 20px);
+    flex-direction: column;
+    background-color: #eeeeee;
+    padding: 10px;
+    overflow: auto;
+
+    mat-card {
+        margin: 10px;
+    }
+
+    iframe {
+        height: 500px;
+        width: 100%;
+    }
+}

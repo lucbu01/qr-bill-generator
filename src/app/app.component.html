@@ -1,5 +1,10 @@
 <div class="container">
-  <mat-toolbar color="primary">QR-Rechnung Generator</mat-toolbar>
+  <mat-toolbar color="primary">
+    <span>QR-Rechnung Generator</span>
+    <div class="spacer"></div>
+    <button mat-icon-button routerLink="/" matTooltip="QR-Rechnung Generator"><mat-icon>qr_code_2</mat-icon></button>
+    <button mat-icon-button routerLink="/about" matTooltip="Über"><mat-icon>info</mat-icon></button>
+  </mat-toolbar>
   <div class="app">
     <router-outlet></router-outlet>
   </div>

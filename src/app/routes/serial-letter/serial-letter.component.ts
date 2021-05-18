@@ -264,7 +264,7 @@ export class SerialLetterComponent {
     pdf.fillColor('black');
     pdf.font('Helvetica');
     pdf.text(
-      'Pfadi Rain\nLuca Bucher\nScheid 1\n6026 Rain\n\n+41 79 664 10 72\nlucbu01@bluewin.ch',
+      this.form.letterHead,
       SwissQRBill.utils.mmToPoints(20),
       SwissQRBill.utils.mmToPoints(15),
       {

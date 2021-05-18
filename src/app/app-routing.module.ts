@@ -5,8 +5,8 @@ import { AboutComponent } from './routes/about/about.component';
 
 const routes: Routes = [
   { path: '', component: SerialLetterComponent },
-  { path: 'serial-letter', component: SerialLetterComponent },
   { path: 'about', component: AboutComponent },
+  { path: '*',  redirectTo: '' },
 ];
 
 @NgModule({

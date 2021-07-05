@@ -28,8 +28,3 @@ jobs:
         run: npm install
       - name: Build App
         run: npm run build:prod
-      - name: Enable auto-merge for Dependabot PRs
-        if: ${{ github.actor == 'dependabot[bot]' }}
-        run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}

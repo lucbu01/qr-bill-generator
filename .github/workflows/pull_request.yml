@@ -1,4 +1,4 @@
-name: check_pull_request
+name: 'check pull request'
 
 on:
   pull_request:

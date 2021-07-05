@@ -29,7 +29,7 @@
     "@angular/service-worker": "~12.0.0",
     "moment": "^2.29.1",
     "rxjs": "~6.6.7",
-    "swissqrbill": "^2.3.3",
+    "swissqrbill": "^2.4.0",
     "tslib": "^2.2.0",
     "xlsx": "^0.17.0",
     "zone.js": "~0.11.4"

@@ -3,6 +3,9 @@ name: build
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ['Dependabot auto-merge']
+    types: [completed]
 
 jobs:
   build:

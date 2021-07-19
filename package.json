@@ -46,7 +46,7 @@
     "@nrwl/angular": "12.5.8",
     "@nrwl/cli": "^12.5.8",
     "@nrwl/jest": "12.5.8",
-    "@nrwl/tao": "^12.5.7",
+    "@nrwl/tao": "^12.5.8",
     "@nrwl/workspace": "12.5.8",
     "@types/jasmine": "~3.8.1",
     "@types/jest": "26.0.24",

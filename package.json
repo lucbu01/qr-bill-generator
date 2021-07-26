@@ -47,7 +47,7 @@
     "@nrwl/cli": "^12.6.2",
     "@nrwl/jest": "12.5.8",
     "@nrwl/tao": "^12.5.8",
-    "@nrwl/workspace": "12.5.8",
+    "@nrwl/workspace": "12.6.2",
     "@types/jasmine": "~3.8.1",
     "@types/jest": "26.0.24",
     "@types/node": "^15.12.2",

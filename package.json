@@ -60,7 +60,7 @@
     "jest-preset-angular": "^8.4.0",
     "prettier": "^2.4.1",
     "protractor": "~7.0.0",
-    "replace-in-file": "^6.2.0",
+    "replace-in-file": "^6.3.2",
     "ts-jest": "26.5.6",
     "ts-node": "~10.2.1",
     "typescript": "~4.2.4"

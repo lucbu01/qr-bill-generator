@@ -48,7 +48,7 @@
     "@nrwl/jest": "12.9.0",
     "@nrwl/tao": "^12.9.0",
     "@nrwl/workspace": "12.9.0",
-    "@types/jasmine": "~3.10.1",
+    "@types/jasmine": "~3.10.2",
     "@types/jest": "26.0.24",
     "@types/node": "^15.12.2",
     "@typescript-eslint/eslint-plugin": "4.33.0",
